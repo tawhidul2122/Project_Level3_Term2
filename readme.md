@@ -1,5 +1,8 @@
 ‘FoodHub’ is a complete Food Ordering dynamic website which contains multiple restaurants menus, foods, details, locations and all other information which are directly controlled by different restaurant’s real owner. 
 
+## how to install
+1. download a zip file
+
 Home Page
 ![1](https://user-images.githubusercontent.com/15268903/57193549-334ffd80-6f5e-11e9-8beb-5027dd16803d.jpg)
 
