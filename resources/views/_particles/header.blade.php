@@ -1,9 +1,9 @@
   <div class="top-bar">
     <div class="container">
-      <ul class="left-bar-side">
+      <!-- <ul class="left-bar-side">
         <li><p><i class="fa fa-envelope-o"></i><a href="mailto:{{getcong('site_email')}}">{{getcong('site_email')}}</a></p></li>
-      </ul>
-      <ul class="right-bar-side social_icons">
+      </ul> -->
+      <!-- <ul class="right-bar-side social_icons">
          <li class="facebook"><a href="{{getcong_widgets('social_facebook')}}" target="_blank"><i class="fa fa-facebook"></i></a></li>
             <li><a href="{{getcong_widgets('social_twitter')}}" target="_blank"><i class="fa fa-twitter"></i></a></li>
             <li><a href="{{getcong_widgets('social_google')}}" target="_blank"><i class="fa fa-google"></i></a></li>
@@ -11,7 +11,7 @@
             <li><a href="{{getcong_widgets('social_pinterest')}}" target="_blank"><i class="fa fa-pinterest"></i></a></li>
             <li><a href="{{getcong_widgets('social_vimeo')}}" target="_blank"><i class="fa fa-vimeo"></i></a></li>
             <li><a href="{{getcong_widgets('social_youtube')}}" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
-      </ul>
+      </ul> -->
     </div>
   </div>
   <header class="sticky">

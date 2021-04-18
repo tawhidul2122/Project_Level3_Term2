@@ -24,7 +24,7 @@
   <div class="white_bg">
     <div class="container margin_60">
       <div class="main_title">
-        <h2 class="nomargin_top">Choose from Most Popular</h2>         
+        <h2 class="nomargin_top">Get food at your doorstep </h2>         
       </div>
       <div class="row">
         @foreach($restaurants as $i => $restaurant)
