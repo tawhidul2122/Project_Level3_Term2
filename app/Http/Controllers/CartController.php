@@ -150,28 +150,28 @@ class CartController extends Controller
              
             $order->save();
 
-            //Owner Mail
-            $restaurant= Restaurants::findOrFail($cart_item->restaurant_id);
-            $user_details= User::findOrFail($restaurant->user_id);    
-            $order_list = Cart::where('user_id',$user_id)->orderBy('id')->get();
+            // //Owner Mail
+            // $restaurant= Restaurants::findOrFail($cart_item->restaurant_id);
+            // $user_details= User::findOrFail($restaurant->user_id);    
+            // $order_list = Cart::where('user_id',$user_id)->orderBy('id')->get();
 
-            $data = array(
-            'name' => $inputs['first_name'],
-            'order_list' => $order_list
+            // $data = array(
+            // 'name' => $inputs['first_name'],
+            // 'order_list' => $order_list
             
-             );     
+            //  );     
 
-            $subject2='New Order Placed'; 
+            // $subject2='New Order Placed'; 
             
-            $owner_admin_order_email=$user_details->email;
+            // $owner_admin_order_email=$user_details->email;
 
-            \Mail::send('emails.order_item_owner_admin', $data, function ($message) use ($subject2,$owner_admin_order_email){
+            // \Mail::send('emails.order_item_owner_admin', $data, function ($message) use ($subject2,$owner_admin_order_email){
 
-                $message->from(getcong('site_email'), getcong('site_name'));
+            //     $message->from(getcong('site_email'), getcong('site_name'));
 
-                $message->to($owner_admin_order_email)->subject($subject2);
+            //     $message->to($owner_admin_order_email)->subject($subject2);
 
-            });
+            //});
 
           }
 
@@ -190,29 +190,29 @@ class CartController extends Controller
 
             //User Email
 
-            \Mail::send('emails.order_item', $data, function ($message) use ($subject,$user_order_email){
+            // \Mail::send('emails.order_item', $data, function ($message) use ($subject,$user_order_email){
 
-                $message->from(getcong('site_email'), getcong('site_name'));
+            //     $message->from(getcong('site_email'), getcong('site_name'));
 
-                $message->to($user_order_email)->subject($subject);
+            //     $message->to($user_order_email)->subject($subject);
 
-            });
+            // });
             
-            //Admin/Owner Email
+            // //Admin/Owner Email
 
-            $subject2='New Order Placed';
+            // $subject2='New Order Placed';
             
 
 
-            $owner_admin_order_email=[getcong('site_email')];
+            // $owner_admin_order_email=[getcong('site_email')];
 
-            \Mail::send('emails.order_item_owner_admin', $data, function ($message) use ($subject2,$owner_admin_order_email){
+            // \Mail::send('emails.order_item_owner_admin', $data, function ($message) use ($subject2,$owner_admin_order_email){
 
-                $message->from(getcong('site_email'), getcong('site_name'));
+            //     $message->from(getcong('site_email'), getcong('site_name'));
 
-                $message->to($owner_admin_order_email)->subject($subject2);
+            //     $message->to($owner_admin_order_email)->subject($subject2);
 
-            });
+            // });
 
 
             /*$cart = Cart::findOrFail($cart_item->id);        
